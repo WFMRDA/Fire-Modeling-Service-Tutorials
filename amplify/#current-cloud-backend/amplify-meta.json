@@ -1,0 +1,80 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "fireodelingut-20190306090036-authRole",
+			"UnauthRoleArn": "arn:aws:iam::492864949254:role/fireodelingut-20190306090036-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::492864949254:role/fireodelingut-20190306090036-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "fireodelingut-20190306090036-deployment",
+			"UnauthRoleName": "fireodelingut-20190306090036-unauthRole",
+			"StackName": "fireodelingut-20190306090036",
+			"StackId": "arn:aws:cloudformation:us-east-1:492864949254:stack/fireodelingut-20190306090036/37cc00e0-4018-11e9-aabd-0e27f3a268d6"
+		}
+	},
+	"function": {
+		"fireModelingServiceTut": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [],
+			"lastBuildTimeStamp": "2019-04-11T16:18:54.567Z",
+			"lastPackageTimeStamp": "2019-05-09T20:03:52.971Z",
+			"distZipFilename": "fireModelingServiceTut-1557432229-latest-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/fireodelingut-20190306090036-deployment/amplify-cfn-templates/function/fireModelingServiceTut-cloudformation-template.json",
+				"logicalId": "functionfireModelingServiceTut"
+			},
+			"lastPushTimeStamp": "2019-05-23T17:15:23.015Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:492864949254:function:fireModelingTutLandscape",
+				"Name": "fireModelingTutLandscape"
+			},
+			"lastPushDirHash": "9e464uN/4huhaztmeGR6/cpR6vA="
+		}
+	},
+	"api": {
+		"fireModelingServiceTut": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "fireModelingServiceTut",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"lastPushTimeStamp": "2019-05-23T17:15:23.012Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/fireodelingut-20190306090036-deployment/amplify-cfn-templates/api/fireModelingServiceTut-cloudformation-template.json",
+				"logicalId": "apifireModelingServiceTut"
+			},
+			"output": {
+				"ApiName": "fireModelingServiceTut",
+				"RootUrl": "https://mjh6ct171e.execute-api.us-east-1.amazonaws.com/Prod"
+			},
+			"lastPushDirHash": "Fv0YbtHRvSeZcuo9dWmVKFZxgSc="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/fireodelingut-20190306090036-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-05-23T17:15:23.013Z",
+			"output": {
+				"S3BucketSecureURL": "https://modeling-service-tutorials.wfmrda.com.s3.amazonaws.com",
+				"WebsiteURL": "http://modeling-service-tutorials.wfmrda.com.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "modeling-service-tutorials.wfmrda.com"
+			},
+			"lastPushDirHash": "mi/TwZKGb01vq3NTHfnbkPoBBro="
+		}
+	}
+}

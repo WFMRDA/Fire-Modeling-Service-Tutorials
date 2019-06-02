@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/landscape",
+            "lambdaFunction": "fireModelingServiceTut",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "fireModelingServiceTut",
+    "apiName": "firemodelingtut4607d201",
+    "functionArns": [
+        {
+            "lambdaFunction": "fireModelingServiceTut"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "fireodelingut-20190306090036-authRole",
+        "unAuthRoleName": "fireodelingut-20190306090036-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "fireModelingServiceTut",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "11c9a7f7"
+}

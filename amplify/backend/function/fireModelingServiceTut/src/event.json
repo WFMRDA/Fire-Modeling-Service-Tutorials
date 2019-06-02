@@ -1,0 +1,7 @@
+{
+    "httpMethod": "GET",
+    "body": " ",
+    "path": "/landscape/download",
+    "resource": "/{proxy+}",
+    "queryStringParameters": {"id":5110,"type":"lcp","username":"pyronerd62","password":"paladin62"}
+}

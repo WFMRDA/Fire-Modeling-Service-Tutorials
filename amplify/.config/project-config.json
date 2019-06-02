@@ -1,0 +1,20 @@
+{
+    "projectName": "fireModelingTut",
+    "projectPath": "/Users/digitaljungle/Sites/sites/Fire-Modeling-Service-Tutorials",
+    "defaultEditor": "code",
+    "frontendHandler": {
+        "javascript": "/Users/digitaljungle/.nvm/versions/node/v10.10.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "vue",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "dist",
+            "BuildCommand": "npm run-script build",
+            "StartCommand": "npm run-script serve"
+        }
+    },
+    "providers": {
+        "awscloudformation": "/Users/digitaljungle/.nvm/versions/node/v10.10.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-provider-awscloudformation"
+    }
+}

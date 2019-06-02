@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "fireodelingut-20190306090036-authRole",
+            "UnauthRoleArn": "arn:aws:iam::492864949254:role/fireodelingut-20190306090036-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::492864949254:role/fireodelingut-20190306090036-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "fireodelingut-20190306090036-deployment",
+            "UnauthRoleName": "fireodelingut-20190306090036-unauthRole",
+            "StackName": "fireodelingut-20190306090036",
+            "StackId": "arn:aws:cloudformation:us-east-1:492864949254:stack/fireodelingut-20190306090036/37cc00e0-4018-11e9-aabd-0e27f3a268d6"
+        }
+    }
+}

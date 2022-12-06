@@ -15,7 +15,7 @@
 		"esri-loader": "^2.9.1",
 		"locutus": "^2.0.10",
 		"native-toast": "^2.0.0",
-		"qs": "^6.7.0",
+		"qs": "^6.7.3",
 		"register-service-worker": "^1.5.2",
 		"save": "^2.3.3",
 		"vue": "^2.6.10",
